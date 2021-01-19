@@ -1,8 +1,8 @@
 from string import *
-message = input("enter your message: ")
+message = input("enter your Keys: ")
 import time
 def main():
-    Keys = 'abcdefhgijklmnopqrstuvxyz !'
+    Keys = 'abcdefhgijklmnopqrstuvxyz !1234567890()*&^%$#@={}[]:.'
     value = Keys[-1] + Keys[0:-1]
 
     encrypt = dict(zip(Keys,value))
