@@ -2,11 +2,11 @@ from string import *
 message = input("enter your message: ")
 import time
 def main():
-    Keys = 'abcdefhgijklmnopqrstuvxyz'
+    Keys = 'abcdefhgijklmnopqrstuvxyz !'
     value = Keys[-1] + Keys[0:-1]
 
     encrypt = dict(zip(Keys,value))
-    Decrypt = dict(zip(Keys,value))
+    Decrypt = dict(zip(value,Keys))
 
     e_D = input("E / D: ")
 
@@ -20,6 +20,6 @@ def main():
     else:
         print("invalid Command")
 
-    return mssg
-    
+    return NewMessage
+
 print(main())
