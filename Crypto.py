@@ -2,7 +2,7 @@ from string import *
 message = input("enter your Keys: ")
 import time
 def main():
-    Keys = 'abcdefhgijklmnopqrstuvxyz !1234567890()*&^%$#@={}[]:.'
+    Keys = 'abcdefhgijklmnopqrstuvwxyz !1234567890()*&^%$#@={}[]:.ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     value = Keys[-1] + Keys[0:-1]
 
     encrypt = dict(zip(Keys,value))
@@ -13,7 +13,7 @@ def main():
     if e_D == "E":
         NewMessage = ''.join([encrypt[letter]
                             for letter in message])
-    elif e_D == "D":
+    elif e_D== "D":
         NewMessage = ''.join([Decrypt[letter]
                             for letter in message])
 
