@@ -5,8 +5,8 @@ def main():
     Keys = 'abcdefhgijklmnopqrstuvxyz'
     value = Keys[-1] + Keys[0:-1]
 
-    encrypt = dict(zip(letters,val))
-    Decrypt = dict(zip(letters,val))
+    encrypt = dict(zip(Keys,value))
+    Decrypt = dict(zip(Keys,value))
 
     e_D = input("E / D: ")
 
@@ -21,5 +21,5 @@ def main():
         print("invalid Command")
 
     return mssg
-if __name__ == '__main__':
-    print(main())
+    
+print(main())
